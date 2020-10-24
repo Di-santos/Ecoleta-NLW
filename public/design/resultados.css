@@ -104,11 +104,11 @@ main{
 }
 
 body::after{
-    background: rgba(56, 231, 114, 0.973);
+    background: rgba(30, 212, 91, 0.973);
     position: fixed;
     content: "";
 
-    top: 320px;
+    top: 300px;
     left: 0;
     right: 0;
     bottom: 0;
