@@ -1,0 +1,135 @@
+{% extends "layout.htm" %}
+
+{% set pageId = "cadastro" %}
+
+
+{% block title %}
+    <title>Cadastro</title>
+{% endblock %}
+
+{% block styles %}
+    <link rel="stylesheet" href="design/cadastro.css">
+    <link rel="stylesheet" href="design/cadastrado.css">
+{% endblock %}
+
+
+
+{% block content %}
+    {% include "parciais/cabeçalho.htm" %}
+
+    <!--Configurando o método POST (mais seguro) para o formulário-->
+    <form action="/cadastrocheck" method="POST">
+        <h1>Cadastro do ponto de coleta</h1>
+
+        <fieldset>
+            <legend><h2>Dados do local</h2></legend>
+
+            <div class="fieldgroup">
+
+                <div class="field">
+                    <label for="name">Nome da Entidade</label>
+                    <input type="text" name="name" placeholder="Insira o nome da entidade" required > 
+                </div>
+
+                <div class="field">
+                    <label for="number">Capa do Perfil</label>
+                    <input type="url" name="image" placeholder="Insira o endereço da imagem aqui" required >
+                </div>
+            </div>
+
+            <div class="fieldgroup">
+
+                <div class="field">
+                    <label for="adress">Endereço</label>
+                    <input type="text" name="adress" placeholder="Ex. Rua xxx, 265" required >
+                </div>
+
+                <div class="field">
+                    <label for="phone">Número para contato</label>
+                    <input type="text" name="phone" placeholder="Ex. 12 987675643" required >
+                </div>
+            </div>
+
+            <div class="fieldgroup">
+                
+                <div class="field">
+                    <label for="state">Estado</label>
+                    <select name="uf" required >
+                        <option value="">Selecione o Estado</option>
+                    </select>
+
+                    <input type="hidden" name="state">
+
+                </div>
+
+                <div class="field">
+                    <label for="city">Cidade</label>
+                    <select name="city" disabled required >
+                        <option value="">Selecione a Cidade</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h2>Itens coletados</h2>
+                <span>Selecione um ou mais itens abaixo</span>
+            </legend>
+
+            <div class="itens">
+                <li data-id="Lâmpadas">
+                    <img src="/icones/lampadas.svg" alt="Lâmpadas">
+                    <span>Lâmpadas</span>
+                </li>
+
+                <li data-id="Pilhas e Baterias">
+                    <img src="/icones/baterias.svg" alt="Pilhas">
+                    <span>Pilhas e Baterias</span>
+                </li>
+
+                <li data-id="Papéis">
+                    <img src="/icones/papeis-papelao.svg" alt="Papéis">
+                    <span>Papéis</span>
+                </li>
+
+                <li data-id="Resíduos Eletrônicos">
+                    <img src="/icones/eletronicos.svg" alt="Resíduos Eletrônicos">
+                    <span>Resíduos Eletrônicos</span>
+                </li>
+
+                <li data-id="Resíduos Orgânicos">
+                    <img src="/icones/organicos.svg" alt="Resíduos Orgânicos">
+                    <span>Resíduos Orgânicos</span>
+                </li>
+
+                <li data-id ="Óleos">
+                    <img src="/icones/oleo.svg" alt="Óleos">
+                    <span>Óleos</span>
+                </li>
+            </div>
+
+            <input type="hidden" name="items">
+        </fieldset>
+
+        <button type="submit">Finalizar Cadastro</button>
+
+    </form>
+{% endblock %}
+
+
+{% block modal %}
+    {% if saved %}
+        {% include "parciais/cadastrado.htm" %}
+    {% endif %}
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="/scripts/cadastro.js"></script>
+{% endblock %}
+
+
+

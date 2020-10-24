@@ -1,0 +1,52 @@
+{% extends "layout.htm" %}
+
+{% set pageId = "resultados" %}
+
+{% block title %}
+    <title>Resultados</title>
+{% endblock %}
+    
+
+{% block styles %}
+    <link rel="stylesheet" href="design/resultados.css">
+{% endblock %}    
+
+
+
+{% block content %}
+    {% include "parciais/cabeçalho.htm" %}
+
+    <main>
+        <h4>
+            <strong>{{ total }} pontos</strong> encontrados
+        </h4>
+
+
+        <div class="cards">
+
+            <!--Bloco para transformar os itens em cards-->
+            {% for place in places %}
+            
+                <div class="card">
+                    <img src="{{ place.image }}" alt="{{ place.name }}">
+                    
+                    <div class="cont">
+                        <h1>{{ place.name }} <br></h1>
+                        <h3>{{ place.items }} <br></h3>
+                        <p>
+                            {{ place.city }}, {{ place.state }} <br> 
+                            {{ place.adress }} <br> 
+                            {{ place.phone }}
+                        </p>
+                    </div>
+
+                </div>
+            {% endfor %}
+
+        </div>
+    </main>
+{% endblock %}
+
+
+
+

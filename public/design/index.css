@@ -1,0 +1,131 @@
+/*Estilo da home*/
+#home{
+    height: 100vh;
+    background: url('../icones/home-background.svg') no-repeat ;
+
+    background-position: 40vw bottom;
+    background-position-y: 10vw ;
+}
+
+#home .content{
+    width: 90%;
+    height: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#home header{
+    margin-top: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#home header a{
+    color: black;
+    border-style: solid;
+    border-radius: 15px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}#home header a span{
+    background-image: url(../icones/log-in.svg);
+
+    width: 20px;
+    height: 20px;
+    margin-left: 22px;
+    margin-right: 12px;
+
+}#home header a strong{
+    color: rgb(61, 2, 61);
+    font-weight: 600;
+    width: 260px;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#home main{
+    max-width: 560px;
+    height: 650px;
+    margin-bottom: 80px;
+    
+    flex: 1;
+    
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
+
+#home main h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 62px;
+    margin-top: 90px;
+    font-weight: bold;
+    color: #115161;
+}
+
+#home main p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    width: 400px;
+    line-height: 12px;
+    margin-top: 110px;
+    
+
+    font-weight: 520;
+    color:#056279;  
+}
+
+
+#home main a{
+    background-color: #34cb79;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 360px;
+    height: 100%;
+    max-height: 80px;
+    border-radius: 20px;
+
+    flex:1;
+
+    display: flex;
+    align-items: center;
+
+
+    transition: 400ms;
+
+}#home main a:hover{
+    background-color: #2fb86e;
+
+}#home main a span{  
+    height: 80px;
+    width: 80px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px ;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    background-color:#2aa764;
+
+}#home main a strong{
+    font-weight: bold;
+    color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}

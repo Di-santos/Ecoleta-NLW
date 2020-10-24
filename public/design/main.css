@@ -1,0 +1,46 @@
+/*Definindo variáveis de estilo predefinidas*/
+:root{
+    --cor1:#d6d6d6;
+    --cor2:#34cb79;
+    --cor3:#a06126;
+    --cor4:#3a230e;
+    --cor5:#130b04;
+}
+
+/*Definindo margens e bordas pra 0*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Propriedades gerais sobre as caixas*/
+body{
+    background: var(--cor1);
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    font-weight: 700;
+    text-decoration: none;
+    color: bisque;
+}
+
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #115161;
+}
+
+legend{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #115161;
+}
+
+*{
+    padding: 0;
+}
+
+

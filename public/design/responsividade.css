@@ -1,0 +1,36 @@
+@media (max-width: 900px) {
+    #home{
+        background-position-x: 200vw;
+    }
+    #home .content{
+        align-items: center;
+        text-align: center;
+    }
+    #home header a{
+        position: absolute;
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #home main{
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 800px) {
+    #resultados main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #resultados .cards{
+        grid-template-columns: 1fr;
+    }
+
+    #resultados .card{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+}

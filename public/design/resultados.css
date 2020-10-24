@@ -1,0 +1,117 @@
+#resultados{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+#resultados header{
+    margin-top: 48px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header a{
+    color: rgb(61, 2, 61);
+    font-weight: 600;
+
+
+    width: 180px;
+    height: 40px;
+    border-radius: 10px;
+    border-style: solid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+} header a span{
+    margin-right: 10px;
+
+    background-image: url('../icones/arrow-left.svg');
+    width: 20px;
+    height: 20px;
+}
+
+main{
+    margin-top: 48px;
+
+}main h4{
+    margin-bottom: 48px ;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    color: #3D023D;
+
+}
+
+.cards{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}.card{
+
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(240, 240, 240);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-height: 400px;
+    
+
+    
+}.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 20px;
+
+    object-fit: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}.card .cont{
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    line-height: 41px;
+
+
+
+} .card h3{
+    font-family: 'Roboto', sans-serif;
+    color: #34cb79;
+
+
+}.card p{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(26, 26, 26);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+body::after{
+    background: rgba(56, 231, 114, 0.973);
+    position: fixed;
+    content: "";
+
+    top: 320px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: -1;
+}
