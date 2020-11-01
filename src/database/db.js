@@ -8,6 +8,7 @@ const db = new sqlite3.Database("./src/database/database.db");
 module.exports = db
 
 
+// COMANDOS BANCO DE DADOS SQL3
 
 // Configura e utiliza o abjeto alterador do banco de dados com comandos SQL
 /*db.serialize(() => {
@@ -87,7 +88,7 @@ module.exports = db
 
 
 });
-*/
+
 // Excluir dados na tabela
 db.run(`DELETE FROM places WHERE id = ?`, [11], function(erro){
     if (erro){
@@ -97,3 +98,4 @@ db.run(`DELETE FROM places WHERE id = ?`, [11], function(erro){
         console.log("deletado!")
     }
 })
+*/

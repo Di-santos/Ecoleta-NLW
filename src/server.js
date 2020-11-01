@@ -64,6 +64,7 @@ server.post("/cadastrocheck", (req, res) =>{
         }
     }
 
+    // Insere os dados no banco 
     db.run(query, values, depoisCadastrado)
 
 
