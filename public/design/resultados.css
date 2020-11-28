@@ -43,7 +43,7 @@ main{
     font-weight: bold;
     font-family: 'Ubuntu', sans-serif;
     font-size: 24px;
-    color: #3D023D;
+    color: #322153;
 
 }
 
@@ -92,7 +92,7 @@ main{
 
 } .card h3{
     font-family: 'Roboto', sans-serif;
-    color: #34cb79;
+    color: #2eb66b;
 
 
 }.card p{
@@ -104,7 +104,7 @@ main{
 }
 
 body::after{
-    background: rgba(30, 212, 91, 0.973);
+    background: #34CB79;
     position: fixed;
     content: "";
 
