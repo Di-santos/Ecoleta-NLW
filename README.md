@@ -9,6 +9,22 @@
 ## O que é?
 O Ecoleta foi um projeto esboçado pela Rocketseat e desenvolvido pela comunidade durante o bootcamp Next Level Week. Dentre as tecnologias, foi usado o esquema básico de HTML, CSS E Javascript no front end, além do Nunjucks para templates. Já o back end foi desenvolvido com node.js e banco de dados em SQLite3. 
 
-## Aprendizado e Desenvolvimento
+## Tecnologias utilizadas
+Front End:
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>Javascript</li>
+<li>Nunjucks</li>
+</ul>
+
+Back End:
+<ul>
+<li>Node.js (Express)</li>
+<li>Banco de dados em SQLite</li>
+<li>BeeKeeper para GUI</li>
+</ul>
+
+## Aprendizado 
 Neste projeto propiciado pela Rocketseat pude aprender um pouco mais sobre a base do desenvolvimento web, além dos fundamentos sobre banco de dados e seu funcionamento.
 No início, obtive algumas dificuldades compreensíveis em termos de organização, já que foi minha primeira experiência na área. 
