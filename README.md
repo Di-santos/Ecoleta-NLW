@@ -7,7 +7,7 @@
 <img src = "https://user-images.githubusercontent.com/68029637/97720942-9f55e800-1aa7-11eb-9e50-ba3ce98d2e7e.png" width = "800" height = "400">
 
 ## O que é?
-O Ecoleta foi um projeto esboçado pela Rocketseat e desenvolvido pela comunidade durante o bootcamp Next Level Week. Dentre as tecnologias, foi usado o esquema básico de HTML, CSS E Javascript no front end, além do Nunjucks para templates. Já o back end foi desenvolvido com node.js e banco de dados em SQLite3. 
+O Ecoleta foi um projeto esboçado pela Rocketseat e desenvolvido pela comunidade; que visa integrar uma aplicação que facilite a conexão entre pontos de coleta e seus contribuidores. O objetivo do Ecoleta é promover a sustentabilidade, sendo benéfico para todas as partes envolvidas: pequenos empreendedores, usuários e, principalmente, o planeta Terra. 
 
 ## Tecnologias utilizadas
 Front End:
