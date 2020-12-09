@@ -10,8 +10,9 @@ module.exports = db
 
 // COMANDOS BANCO DE DADOS SQL3
 
+/*
 // Configura e utiliza o abjeto alterador do banco de dados com comandos SQL
-/*db.serialize(() => {
+db.serialize(() => {
 
   // Criar uma tabela
     db.run(`
@@ -63,8 +64,9 @@ module.exports = db
     }
 
     db.run(query, values, depoisCadastrado)
+*/
 
-    
+/*    
     // Consultar dados na tabela
     db.all(`SELECT * FROM places`, function(erro, rows){
         if (erro){
@@ -75,22 +77,10 @@ module.exports = db
             console.log(rows)
         }
     })
-
-    // Excluir dados na tabela
-    db.run(`DELETE FROM places WHERE id = ?`, [2], function(erro){
-        if (erro){
-            return console.log(erro)
-        }
-        else{
-            console.log("deletado!")
-        }
-    })
-
-
-});
-
+*/
+/*
 // Excluir dados na tabela
-db.run(`DELETE FROM places WHERE id = ?`, [11], function(erro){
+db.run(`DELETE FROM places WHERE id = ?`, [14], function(erro){
     if (erro){
         return console.log(erro)
     }
